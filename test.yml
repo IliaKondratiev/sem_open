@@ -2,5 +2,5 @@
   become: true
   tasks:
     - name: Print OS Info
-      ansible.builtin.package
+      ansible.builtin.package:
         name: Darwin
