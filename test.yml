@@ -1,0 +1,6 @@
+- hosts: mac_workstations
+  become: true
+  tasks:
+    - name: Print OS Info
+      ansible.builtin.package
+        name: Darwin
